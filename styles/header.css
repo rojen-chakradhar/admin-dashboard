@@ -5,12 +5,11 @@ nav {
 	justify-content: space-between;
 	padding: 1vw 2vw;
 	box-shadow: 0 0 20px #00000010, 0 0 20px #00000010;
-	color: #444;
-	background-color: #fff;
+	background-color: var(--white);
 }
 
 nav ul a li {
-	color: #444;
+	color: var(--black-text);
 	font-size: 1.2vw;
 }
 
@@ -36,13 +35,13 @@ nav ul #search {
 	width: 25vw;
 	padding: 0 0.3vw 0 0;
 	border-radius: 2px;
-	background-color: #ddd;
+	background-color: var(--white-hover);
 }
 
 nav ul #search i {
 	padding: 0 0.5vw;
-	color: #777;
-	border-left: 1px solid #777;
+	color: var(--input-color);
+	border-left: 1px solid var(--input-color);
 }
 
 nav input {
@@ -51,7 +50,7 @@ nav input {
 	font-size: 1.2vw;
 	border: none;
 	background-color: transparent;
-	color: #777;
+	color: var(--input-color);
 }
 
 nav input:focus {
@@ -59,7 +58,7 @@ nav input:focus {
 }
 
 nav input::placeholder {
-	color: #777;
+	color: var(--input-color);
 }
 
 nav ul li img {
@@ -83,7 +82,8 @@ nav ul .modal{
 	flex-direction: column;
 	border-radius: 5px;
   font-size: 1vw;
-	background-color: #fff;
+  color: var(--black-text);
+	background-color: var(--white);
 	cursor: default;
 	box-shadow: 0 0 10px #00000010, 0 0 10px #00000010;
 }
@@ -105,9 +105,9 @@ nav ul .pfp .status {
 	right: 0;
 	height: 0.8vw;
 	width: 0.8vw;
-	border: 1px solid #fff;
+	border: 1px solid var(--white);
 	border-radius: 50%;
-	background-color: rgb(71, 255, 47);
+	background-color: var(--green);
 }
 
 nav .pfpHover {
@@ -121,7 +121,7 @@ nav .pfpHover {
 	padding: 1vw 0.5vw;
 	flex-direction: column;
 	border-radius: 5px;
-	background-color: #fff;
+	background-color: var(--white);
 	cursor: default;
 	box-shadow: 0 0 10px #00000010, 0 0 10px #00000010;
 }
@@ -139,7 +139,7 @@ nav .pfpHover a li {
 }
 
 nav .pfpHover a:hover {
-	background-color: #eee;
+	background-color: var(--white-hover);
 }
 
 #sidenav {
@@ -149,15 +149,15 @@ nav .pfpHover a:hover {
 	display: flex;
 	flex-direction: column;
 	padding: 1vw 0.5vw;
-	color: #f1f1f1;
-	background-color: #2d2f3b;
+	color: var(--white-text);
+	background-color: var(--sidenav);
 }
 
 #sidenav .name {
 	display: flex;
 	align-items: center;
 	margin-bottom: 1.5vw;
-  color: #f1f1f1;
+  color: var(--white-text);
   text-transform: capitalize;
 }
 
@@ -195,17 +195,14 @@ nav .pfpHover a:hover {
 	cursor: pointer;
 	padding: 0.5vw 0.5vw 0.5vw 0.8vw;
 	border-radius: 0.5vw;
-	color: #ccc;
 }
 
 #sidenav ul .active{
-  color: #ccc;
-  background-color: #494d5f;
+  background-color: var(--sidenav-hover);
 }
 
 #sidenav ul li:hover {
-	color: #ccc;
-	background-color: #494d5f;
+	background-color: var(--sidenav-hover);
 }
 
 #sidenav ul li .l i {

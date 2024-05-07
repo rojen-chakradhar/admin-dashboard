@@ -22,13 +22,13 @@ function pfp() {
 }
 
 function notificationModal() {
-	const modal = document.querySelector(".modal");
+	const modal = document.querySelector(".modal1");
 	modal.style.display = "flex";
 	event.stopPropagation();
 }
 
 function mailModal() {
-	const modal = document.querySelector(".modal");
+	const modal = document.querySelector(".modal2");
 	modal.style.display = "flex";
 	event.stopPropagation();
 }
