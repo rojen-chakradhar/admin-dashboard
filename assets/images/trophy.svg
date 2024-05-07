@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_827" data-name="Ellipse 827" cx="60" cy="60" r="60" transform="translate(641 1556)" fill="#12b981"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_7580" data-name="Rectangle 7580" width="41.718" height="42.979" transform="translate(-2.528 -107.567)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(-641 -1556)" clip-path="url(#clip-path)">
+    <g id="_5f87582fe1d7ae6e9a97b37b_icon_motivation-color" data-name="5f87582fe1d7ae6e9a97b37b_icon_motivation-color" transform="translate(682.669 1663.567)">
+      <g id="Group_15047" data-name="Group 15047" clip-path="url(#clip-path-2)">
+        <g id="Group">
+          <text id="_8_Critical_Tips_to_" data-name="8 Critical Tips to " transform="translate(7.436 1.33)" fill="#12b981" font-size="3" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">8 Critical Tips to </tspan></text>
+          <text id="Recognize_and_Motivate_" data-name="Recognize and Motivate " transform="translate(2.09 4.777)" fill="#12b981" font-size="3" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">Recognize and Motivate </tspan></text>
+          <text id="your_Agents" data-name="your Agents" transform="translate(10.033 8.225)" fill="#12b981" font-size="3" font-family="SegoeUI-Bold, Segoe UI" font-weight="700" letter-spacing="-0.01em"><tspan x="0" y="0">your Agents</tspan></text>
+        </g>
+      </g>
+      <g id="To-export" transform="translate(-30.093 -92.952)">
+        <g id="icon-global-motivation" transform="translate(2.116 2.085)">
+          <path id="Combined-Shape" d="M74.89,2.1a6.617,6.617,0,0,1,6.617,6.617h6.627a6.617,6.617,0,0,1,6.6,6.606h0v14.9A21.507,21.507,0,0,1,73.223,51.736h.731A32.292,32.292,0,0,1,51.726,64.816V78.193h9.93a6.617,6.617,0,0,1,6.617,6.617v3.314h3.314a3.314,3.314,0,0,1,0,6.617H25.28a3.314,3.314,0,1,1,0-6.617h3.3v-3.3A6.617,6.617,0,0,1,35.2,78.2h9.93V64.826A32.312,32.312,0,0,1,22.9,51.747h.72A21.507,21.507,0,0,1,2.116,30.229V15.318A6.617,6.617,0,0,1,8.733,8.7h6.617a6.617,6.617,0,0,1,6.617-6.617ZM61.656,84.82H35.179v3.314H61.656ZM74.89,8.671H21.946v20.8C22.367,45.5,34.057,58.353,48.413,58.353S74.448,45.5,74.869,29.468V8.712ZM15.329,15.318H8.712V28.572a16.537,16.537,0,0,0,9.539,14.993A39.474,39.474,0,0,1,15.339,29.55V15.318ZM81.507,28.572a39.278,39.278,0,0,1-2.922,14.983,16.537,16.537,0,0,0,9.55-14.983h0V15.318H81.507Z" transform="translate(-2.116 -2.085)" fill="#12b981" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
