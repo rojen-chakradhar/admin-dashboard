@@ -3,43 +3,43 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1vw 2vw;
+	padding: 10px 30px;
 	box-shadow: 0 0 20px #00000010, 0 0 20px #00000010;
 	background-color: var(--white);
 }
 
 nav ul a li {
 	color: var(--black-text);
-	font-size: 1.2vw;
+	font-size: 16px;
 }
 
 nav ul {
 	display: flex;
 	align-items: center;
-	column-gap: 2vw;
+	column-gap: 20px;
 }
-
+/* 
 nav ul i {
-	font-size: 1.5vw;
-}
+	font-size: 50px;
+} */
 
 nav ul li {
   position: relative;
 	display: flex;
-	column-gap: 1vw;
+	column-gap: 10px;
 	align-items: center;
 	cursor: pointer;
 }
 
 nav ul #search {
-	width: 25vw;
-	padding: 0 0.3vw 0 0;
+	width: 350px;
+	padding: 0 5px 0 0;
 	border-radius: 2px;
 	background-color: var(--white-hover);
 }
 
 nav ul #search i {
-	padding: 0 0.5vw;
+	padding: 0 5px;
 	color: var(--input-color);
 	border-left: 1px solid var(--input-color);
 }
@@ -47,7 +47,7 @@ nav ul #search i {
 nav input {
 	width: 100%;
 	padding: 0.5vw;
-	font-size: 1.2vw;
+	font-size: 14px;
 	border: none;
 	background-color: transparent;
 	color: var(--input-color);
@@ -62,26 +62,25 @@ nav input::placeholder {
 }
 
 nav ul li img {
-	height: 2.5vw;
-	width: 2.5vw;
+	height: 30px;
+	width: 30px;
 	border-radius: 50%;
 	object-fit: cover;
 }
 
 nav ul .modal{
 	position: absolute;
-	top: 1.8vw;
-	right: 0.5vw;
-  height: 25vw;
-	width: 18vw;
+	top: 20px;
+	right: 5px;
+  height: 300px;
+	width: 240px;
 	display: none;
   justify-content: center;
-  row-gap: 0.8vw;
 	align-items: center;
-	padding: 1vw 0.5vw;
+	padding: 10px 5px;
 	flex-direction: column;
 	border-radius: 5px;
-  font-size: 1vw;
+  font-size: 12px;
   color: var(--black-text);
 	background-color: var(--white);
 	cursor: default;
@@ -89,7 +88,7 @@ nav ul .modal{
 }
 
 nav ul .modal i{
-  font-size: 5vw;
+  font-size: 60px;
 }
 
 nav ul .pfp {
@@ -103,8 +102,8 @@ nav ul .pfp .status {
 	position: absolute;
 	bottom: -3px;
 	right: 0;
-	height: 0.8vw;
-	width: 0.8vw;
+	height: 10px;
+	width: 10px;
 	border: 1px solid var(--white);
 	border-radius: 50%;
 	background-color: var(--green);
@@ -112,13 +111,13 @@ nav ul .pfp .status {
 
 nav .pfpHover {
 	position: absolute;
-	top: 2.5vw;
-	right: 1vw;
-	width: 12vw;
+	top: 35px;
+	right: 5px;
+	width: 150px;
 	display: none;
-	row-gap: 0.8vw;
+	row-gap: 5px;
 	align-items: start;
-	padding: 1vw 0.5vw;
+	padding: 10px 5px;
 	flex-direction: column;
 	border-radius: 5px;
 	background-color: var(--white);
@@ -134,7 +133,7 @@ nav .pfpHover a li {
 	width: 100%;
 	display: inline-block;
 	border-radius: 2px;
-	padding: 0.5vw;
+	padding: 5px;
 	cursor: pointer;
 }
 
@@ -145,10 +144,10 @@ nav .pfpHover a:hover {
 #sidenav {
 	height: 100vh;
 	overflow-y: scroll;
-	width: 28vw;
+	width: 350px;
 	display: flex;
 	flex-direction: column;
-	padding: 1vw 0.5vw;
+	padding: 10px 5px;
 	color: var(--white-text);
 	background-color: var(--sidenav);
 }
@@ -156,19 +155,19 @@ nav .pfpHover a:hover {
 #sidenav .name {
 	display: flex;
 	align-items: center;
-	margin-bottom: 1.5vw;
+	margin-bottom: 20px;
   color: var(--white-text);
   text-transform: capitalize;
 }
 
 #sidenav h1 {
-	font-size: 1.5vw;
+	font-size: 15px;
   text-wrap: nowrap;
 }
 
 #sidenav img {
-	height: 3.5vw;
-	width: 3.5vw;
+	height: 40px;
+	width: 40px;
 	object-fit: cover;
 	filter: brightness(25);
 }
@@ -176,13 +175,13 @@ nav .pfpHover a:hover {
 #sidenav ul {
 	display: flex;
 	flex-direction: column;
-	row-gap: 0.8vw;
-	margin-bottom: 1.5vw;
+	row-gap: 5px;
+	margin-bottom: 15px;
 }
 
 #sidenav ul p {
-  padding: 0 0.5vw 0;
-	font-size: 1vw;
+  padding: 0 10px 0;
+	font-size: 14px;
 	text-transform: uppercase;
 }
 
@@ -191,10 +190,10 @@ nav .pfpHover a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-size: 1.2vw;
+	font-size: 14px;
 	cursor: pointer;
-	padding: 0.5vw 0.5vw 0.5vw 0.8vw;
-	border-radius: 0.5vw;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 #sidenav ul .active{
@@ -206,17 +205,17 @@ nav .pfpHover a:hover {
 }
 
 #sidenav ul li .l i {
-	font-size: 1vw;
+	font-size: 18px;
 }
 
 #sidenav ul li i {
-	font-size: 1.2vw;
+	font-size: 16px;
 }
 
 #sidenav .l {
 	display: flex;
 	align-items: center;
-	column-gap: 1vw;
+	column-gap: 10px;
 }
 
 #sidenav ul:last-child {
