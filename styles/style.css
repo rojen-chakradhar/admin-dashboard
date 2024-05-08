@@ -93,7 +93,7 @@ main {
 	height: 180px;
 	width: 210px;
 	display: flex;
-	row-gap: 20px;
+	row-gap: 10px;
 	flex-direction: column;
 	padding: 10px;
 	background-color: var(--whitee);
@@ -106,9 +106,16 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 20px;
 	background-color: var(--whitee);
 	box-shadow: 0 0 10px #00000020, 0 0 10px #00000020;
+}
+
+.long img{
+	width: 120px;
+	margin-left: 30px;
+	object-fit: cover;
+	mix-blend-mode:multiply;
 }
 
 .pink{
