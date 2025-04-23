@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login | .agency</title>
+		<link rel="stylesheet" href="./styles/login.css" />
+		<link rel="shortcut icon" href="./assets/images/logo.webp" type="image/x-icon" />
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+	</head>
+	<body>
+		<main>
+			<nav id="navbar" class="navbar">
+				<h1 class="logo"><a href="./index.html" class="black-c" id="logo"><img src="./assets/images/logo.webp" alt="logo"> .agency</a></h1>
+				<a href="./index.html"><i class="ri-close-large-line close white-c" id="x"></i></a>
+			</nav>
+			<section id="hero" class="hero">
+				<section class="login-sec section white-bg" id="login-sec">
+					<div class="container active" id="loginForm">
+						<h1 class="heading black-c">log-in</h1>
+						<p class="desc black-c">Login using social networks</p>
+						<div class="socials">
+							<a href="#" class="black-bg"><i class="ri-facebook-fill white-c"></i></a>
+							<a href="#" class="black-bg"><i class="ri-google-fill white-c"></i></a>
+							<a href="#" class="black-bg"><i class="ri-github-fill white-c"></i></a>
+						</div>
+						<div class="hr">
+							<hr/>
+							<span class="black-c">or</span>
+							<hr/>
+						</div>
+						<form>
+							<input type="text" id="email" placeholder="email" required />
+							<div class="password-field">
+								<input type="password" id="loginPassword" placeholder="password" required />
+								<i class="ri-eye-line eye black-c" onclick="togglePassword(this, 'loginPassword')"></i>
+							</div>
+							<p id="error"></p>
+              <div class="login-btn btn black-bg white-c" onclick="login()">log in</div>
+						</form>
+            <div class="phone">
+              <br>
+              <p onclick="logup()">Don't have an account?</p>
+            </div>
+					</div>
+					<div class="container hidden black-bg" id="login">
+						<h1 class="heading white-c">already have an account?</h1>
+						<p class="desc white-c">
+							Login up and discover a great amount of new
+							opportunities!
+						</p>
+						<button class="signup-btn btn white-bg black-c" onclick="signin()">sign in</button>
+					</div>
+				</section>
+				<section class="signup-sec section black-bg" id="signup-sec">
+					<div class="container active" id="signup">
+						<h1 class="heading white-c">new here?</h1>
+						<p class="desc white-c">
+							Sign up and discover a great amount of new
+							opportunities!
+						</p>
+						<button class="signup-btn btn black-c white-bg" onclick="logup()">sign up</button>
+					</div>
+					<div class="container hidden white-bg" id="signupForm">
+            <h1 class="heading black-c">sign-up</h1>
+						<p class="desc black-c">Signup using social networks</p>
+						<div class="socials">
+							<a href="#" class="black-bg"><i class="ri-facebook-fill white-c"></i></a>
+							<a href="#" class="black-bg"><i class="ri-google-fill white-c"></i></a>
+							<a href="#" class="black-bg"><i class="ri-github-fill white-c"></i></a>
+						</div>
+						<div class="hr">
+							<hr />
+							<span class="black-c">or</span>
+							<hr />
+						</div>
+						<form>
+              <input type="text" id="email" placeholder="email" required />
+							<div class="password-field">
+                <input type="password" id="signupPassword" placeholder="password" required />
+                <i class="ri-eye-line eye black-c" onclick="togglePassword(this, 'signupPassword')"></i>
+							</div>
+							<div class="password-field">
+                <input type="password" id="confirmPassword" placeholder="confirm password" required />
+								<i class="ri-eye-line eye black-c" onclick="togglePassword(this, 'confirmPassword')"></i>
+							</div>
+							<p id="error2"></p>
+						</form>
+						<button class="login-btn btn black-bg white-c" onclick="signup()">sign up</button>
+            <div class="phone">
+              <br>
+              <p onclick="signin()">Already have an account?</p>
+            </div>
+					</div>
+				</section>
+			</section>
+		</main>
+		<script src="./scripts/login.js"></script>
+	</body>
+</html>

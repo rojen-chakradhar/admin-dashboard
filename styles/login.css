@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.white-c {
+	color: #fafafa;
+}
+
+.white-bg {
+	background-color: #fafafa;
+}
+
+.black-c {
+	color: #2e2e2e;
+}
+
+.black-bg {
+	background-color: #2e2e2e;
+}
+
+.navbar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1vh 2vw;
+}
+
+.navbar .logo a {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+img {
+	width: 50px;
+}
+
+.navbar .close {
+	font-size: 2vw;
+	text-transform: uppercase;
+}
+
+.hero {
+	height: 100lvh;
+	width: 100%;
+	display: flex;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  transition: flex .5s ease;
+}
+
+#login-sec {
+	flex: 1.5;
+}
+
+#signup-sec {
+	flex: 1;}
+
+.container {
+	width: 60%;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 2vw;
+}
+
+.active:has(input) .heading {
+	font-size: 50px;
+}
+
+.active:has(input) .desc {
+	font-size: 18px;
+}
+
+.heading {
+	line-height: 1;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.desc {
+	text-align: center;
+	font-size: 16px;
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	column-gap: 16px;
+}
+
+.socials a {
+	padding: 10px 15px;
+	border-radius: 50%;
+	font-size: 20px;
+}
+
+.hr {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.hr span {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+hr {
+	height: 0.1vw;
+	width: 100%;
+	border: none;
+	background-color: #ddd;
+}
+
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 2vw;
+}
+
+input {
+	width: 100%;
+	padding: 0.5em 1em;
+	font-size: 16px;
+	border: none;
+	border-radius: 2vw;
+	background-color: #eee;
+}
+
+input::placeholder {
+	text-transform: capitalize;
+}
+
+input:focus {
+	outline: none;
+}
+
+.password-field {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.password-field input {
+	border-radius: 2vw 0 0 2vw;
+}
+
+.eye {
+	border-radius: 0 2vw 2vw 0;
+	height: 100%;
+	width: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.btn {
+	padding: 1vw 3vw;
+	border: none;
+	border-radius: 2vw;
+	font-size: 16px;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+
+.active {
+	display: flex;
+}
+
+.hidden {
+	display: none;
+}
+
+.phone {
+	display: none;
+	flex-direction: column;
+}
+
+.phone p {
+	font-size: 1vw;
+	text-decoration: underline;
+	color: #2e2e2e;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		padding: 0 2vw;
+	}
+	.signup-sec {
+		display: none;
+	}
+	.navbar .logo a {
+		font-size: 2vw;
+	}
+	.navbar .close {
+		color: #2e2e2e;
+	}
+	.hero {
+		flex-direction: column;
+	}
+	.active:has(input) .heading {
+		font-size: 5vw;
+	}
+	.active:has(input) .desc,
+	.desc,
+	.socials a,
+	input,
+	.eye,
+	.btn {
+		font-size: 1.2vw;
+	}
+	.heading {
+		font-size: 3vw;
+	}
+	.socials {
+		column-gap: 2vw;
+	}
+	.socials a,
+	input {
+		padding: 0.5vw 1vw;
+	}
+	.hr {
+		column-gap: 1vw;
+	}
+	.hr span {
+		font-size: 1vw;
+	}
+	.phone {
+		display: block;
+	}
+}
+
+@media (min-width: 1440px) {
+	.active:has(input) .heading {
+		font-size: 5vw;
+	}
+	.active:has(input) .desc,
+	.desc,
+	input,
+	.eye,
+	.btn,
+	.socials a,
+	.hr span {
+		font-size: 1.2vw;
+	}
+	.heading {
+		font-size: 3vw;
+	}
+	.socials {
+		column-gap: 2vw;
+	}
+	.socials a,
+	input {
+		padding: 0.5vw 1vw;
+	}
+	.hr {
+		column-gap: 1vw;
+	}
+}

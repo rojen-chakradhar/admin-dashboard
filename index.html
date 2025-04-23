@@ -3,256 +3,31 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Admin dashboard</title>
-		<link rel="stylesheet" href="./styles/style.css" />
+		<title>Agency</title>
 		<link rel="stylesheet" href="./styles/color.css">
+		<link rel="stylesheet" href="./styles/style.css" />
 		<link rel="stylesheet" href="./styles/header.css">
 		<link rel="stylesheet" href="./styles/responsive.css">
 		<link rel="shortcut icon" href="./assets/images/logo.webp" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
 	<body>
 		<main>
-			<div id="sidenav">
-				<a href="">
-					<div class="name">
-						<img src="./assets/images/logo.webp" alt="logo" />
-						<h1>admin dashboard</h1>
-					</div>
-				</a>
-				<ul>
-					<li class="active">
-						<div class="l">
-							<i class="ri-home-2-fill"></i> Dashboard
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-tv-2-line"></i> Templates
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
+			 <nav class="navbar" id="navbar">
+				<h1 class="logo">.agency</h1>
+				<ul class="nav-links">
+					<li class="nav-link"><a href="./login.html">home</a></li>
+					<li class="nav-link"><a href="./home.html">service</a></li>
+					<li class="nav-link"><a href="#">projects</a></li>
+					<li class="nav-link"><a href="#">about us</a></li>
 				</ul>
-				<ul>
-					<p>admin pannels</p>
-					<li>
-						<div class="l">
-							<i class="ri-shopping-cart-2-line"></i> eCommerce
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-plane-line"></i> Travel & Booking
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-stethoscope-line"></i> Hospital
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-btc-line"></i> Crypto
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-price-tag-3-line"></i>
-							Support ticket
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-bank-line"></i> Bank
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-				</ul>
-				<ul>
-					<p>apps</p>
-					<li>
-						<div class="l">
-							<i class="ri-edit-box-line"></i> ToDo
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-group-line"></i> Contacts
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-					<li>
-						<div class="l">
-							<i class="ri-mail-line"></i> Email Applicants
-						</div>
-						<i class="fas fa-chevron-right"></i>
-					</li>
-				</ul>
-			</div>
-			<div id="main">
-				<nav>
-					<ul>
-						<li class="bar" onclick="nav()">
-							<i class="ri-menu-line"></i>
-						</li>
-						<li id="search">
-							<input type="text" name="Search" id="input" placeholder="Search">
-							<i class="ri-search-line" type="submit"></i>
-						</li>
-					</ul>
-					<ul>
-						<li onclick="notificationModal()">
-							<i class="ri-notification-line"></i>
-							<ul class="notify modal modal1">
-								<i class="ri-inbox-line"></i>
-								<p>Nothing is here.</p>
-							</ul>
-						</li>
-						<li onclick="mailModal()">
-							<i class="ri-mail-line"></i>
-							<ul class="mail modal modal2">
-								<i class="ri-inbox-line"></i>
-								<p>Nothing is here.</p>
-							</ul>
-						</li>
-						<li class="pfp" onclick="pfp()">
-							<img src="./assets/images/pfp.webp" alt="profile picture" />
-							<div class="status active"></div>
-							<ul class="pfpHover">
-								<a href="">
-									<li><i class="ri-user-line"></i> Profile</li>
-								</a>
-								<a href="">
-									<li><i class="ri-settings-3-line"></i> Settings</li>
-								</a>
-								<a href="">
-									<li><i class="ri-logout-box-r-line"></i> Logout</li>
-								</a>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<div id="wrapper">
-					<div class="content up lup">
-						<div class="header">
-							<p>revenue</p>
-							<i class="ri-restart-line"></i>
-						</div>
-						<div class="week">
-							<div class="lweek">
-								<p>Current week</p>
-								<h1 class="pink">$82,124	</h1>
-							</div>
-							<div class="rweek">
-								<p>Previous week</p>
-								<h1>$52,502</h1>
-							</div>
-						</div>
-						<img src="" alt="graph">
-					</div>
-					<div class="content up rup">
-						<div class="hit-rate long">
-							<div class="header">
-								<p>hit rate <span class="pink">-12%</span></p>
-								<i class="ri-restart-line"></i>
-							</div>
-							<img src="./assets/images/circle.png" alt="circle graph">
-						</div>
-						<div class="deals long">
-							<div class="header">
-								<p>deals -55%</p>
-								<p>152 <span class="grey">/ 200</span></p>
-							</div>
-							<img src="./assets/images/circle.png" alt="circle graph">
-						</div>
-						<div class="order-value short">
-							<div class="l">
-								<p>order value</p>
-								<h1>$ 88,568</h1>
-							</div>
-							<img src="./assets/images/trophy.svg" width="60px" alt="trophy">
-						</div>
-						<div class="calls short">
-							<div class="l">
-								<p>calls</p>
-								<h1>3,568</h1>
-							</div>
-							<img src="./assets/images/incomming-call.png" alt="phone" width="50px">
-						</div>
-					</div>
-					<div class="content btm lbtm">
-						<div class="emails btmp">
-							<div class="header">
-								<p>emails</p>
-								<i class="ri-restart-line"></i>
-							</div>
-							<ul>
-								<li>
-									<div class="header">
-										<p>Open rate</p>
-										<p>89%</p>
-									</div>
-									<div class="range"></div>
-								</li>
-								<li>
-									<div class="header">
-										<p>Sent</p>
-										<p>310 <span>/ 500</span></p>
-									</div>
-									<div class="range"></div>
-								</li>
-							</ul>
-						</div>
-						<div class="products btmp">
-							<div class="header">
-								<p>top products</p>
-								<p>
-									<span>Show all</span>
-								</p>
-							</div>
-							<ul>
-								<li>
-									<p class="greyy">IPhone X</p>
-									<p>2245</p>
-								</li>
-								<li>
-									<p class="greyy">One Plus</p>
-									<p>1850</p>
-								</li>
-								<li>
-									<p class="greyy">Samsung S7</p>
-									<p>1550</p>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="content btm avg-deal">
-						<div class="header">
-							<p>average deal size</p>
-						</div>
-						<div class="dwn">
-							<div class="rep dwnc">
-								<p class="pink">-30%</p>
-								<h1>$12,536</h1>
-								<p class="grey">Pre rep</p>
-							</div>
-							<div class="team dwnc">
-								<p>12%</p>
-								<h1>$18,548</h1>
-								<p class="grey">Per team</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+				<button class="cta">get in touch <i class="ri-arrow-right-up-line"></i></button>
+			 </nav>
+			 <section id="hero" class="hero">
+				<h1 class="heading">get digital with us</h1>
+				<p>At Agency, we craft bold ideas into powerful brand stories that leave a lasting impression. Let's turn your vision into reality.</p>
+				<button class="cta">let's talk <i class="ri-arrow-right-up-line"></i></button>
+			 </section>
 		</main>
 		<script src="./scripts/header.js"></script>
 		<script src="./scripts/script.js"></script>

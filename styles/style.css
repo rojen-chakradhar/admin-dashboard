@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
 
 * {
 	margin: 0;
@@ -7,204 +7,93 @@
 	text-decoration: none;
 	list-style: none;
 	scroll-behavior: smooth;
-	/* outline: 1px dotted red; */
+	/*outline: 1px dotted red;*/
 	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 500;
 }
 
 html,
 body {
 	height: 100%;
 	width: 100%;
-	background-color: var(--bg);
+	background-color: #000;
 }
 
-main {
-	height: 100%;
-	width: 100%;
-	display: flex;
-}
-
-#main {
+section {
 	height: 100vh;
 	width: 100%;
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 5vw;
+	padding: 0 5vw;
+	color: #2e2e2e;
 }
 
-#wrapper {
-	height: 600px;
+.navbar {
+	position: absolute;
+	top: 0;
 	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
-	column-gap: 40px;
-	padding: 20px;
+	align-items: center;
+	justify-content: space-between;
+	padding: .5rem 5rem;
+	text-transform: uppercase;
+	background-color: #000;
 }
 
-.content {
-	height: 320px;
-	width: 440px;
-	color: #6b717d;
+.logo {
+	font-size: 2vw;
+	font-weight: 800;
+	text-transform: lowercase;
+	color: #fafafa;
 }
 
-.up:first-child {
-	display: flex;
-	flex-direction: column;
-	row-gap: 20px;
-	box-shadow: 0 0 10px #00000020, 0 0 10px #00000020;
-	padding: 10px;
-	background-color: var(--whitee);
+.nav-links {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.header {
+.heading {
+	font-size: 5vw;
+	font-weight: 800;
 	text-transform: capitalize;
-	font-size: 14px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	color: #fafafa;
 }
 
-.header p{
-	color: #333;
-	font-weight: 900;
-}
-
-.week {
-	display: flex;
-	align-items: center;
-	column-gap: 40px;
-}
-
-.week p {
-	font-size: 16px;
-	font-weight: 100;
-}
-
-.week h1 {
-	font-size: 24px;
-	font-weight: 100;
-}
-
-.rup {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-}
-
-.long {
-	height: 180px;
-	width: 210px;
-	display: flex;
-	row-gap: 10px;
-	flex-direction: column;
-	padding: 10px;
-	background-color: var(--whitee);
-	box-shadow: 0 0 10px #00000020, 0 0 10px #00000020;
-}
-
-.short {
-	height: 120px;
-	width: 210px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
-	background-color: var(--whitee);
-	box-shadow: 0 0 10px #00000020, 0 0 10px #00000020;
-}
-
-.long img{
-	width: 120px;
-	margin-left: 30px;
-	object-fit: cover;
-	mix-blend-mode:multiply;
-}
-
-.pink{
-	color: var(--pink);
-}
-
-.grey{
-	color: gray;
-}
-
-.short p {
-	font-size: 14px;
-	text-transform: capitalize;
-}
-
-.greyy {
-	font-weight: 900;
-	color: #333;
-}
-
-.short h1 {
-	font-size: 24px;
-	font-weight: 100;
-}
-
-.btm {
-	height: 150px;
-	width: 440px;
-	display: flex;
-}
-
-.lbtm {
-	column-gap: 20px;
-}
-
-.btmp {
-	padding: 10px;
-	height: 150px;
-	width: 210px;
-	display: flex;
-	flex-direction: column;
-	row-gap: 20px;
-	background-color: var(--whitee);
-	box-shadow: 0 0 10px #00000020, 0 0 10px #00000020;
-}
-
-.products .header p span {
-	color: #4dbef3;
-	cursor: pointer;
-}
-
-.products ul {
-	display: flex;
-	flex-direction: column;
-	row-gap: 10px;
-}
-
-.products ul li {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.avg-deal {
-	box-shadow: 0 0 10px #00000020, 0 0 10px #00000020;
-	padding: 10px;
-	display: flex;
-	row-gap: 20px;
+p {
+	width: 80%;
 	text-align: center;
-	flex-direction: column;
-	background-color: var(--whitee);
+	font-size: 1.2vw;
+	color: #fafafa;
 }
 
-.dwn {
+a {
+	color: #fafafa;
+	font-weight: 400;
+}
+
+.cta {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	column-gap: 1em;
+	padding: .2em .5em;
+	font-size: .9em;
+	font-weight: 400;
+	text-transform: uppercase;
+	border: 1px solid #dedede;
+	border-radius: 2vw;
+	background-color: #fafafa;
+	cursor: pointer;
+	transition: box-shadow .5s ease;
 }
 
-.dwnc p{
-	font-size: 14px;
-}
-
-.dwnc h1{
-	font-size: 30px;
-	color: #333;
-	font-weight: 100;
-}
-
-.avg-deal .header{
-	justify-content: center;
+.cta i {
+	padding: .2em;
+	border-radius: 50%;
+	color: #fafafa;
+	background-color: #000;
 }
